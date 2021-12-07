@@ -4,7 +4,7 @@ run:
 	go run ./...
 
 initializ:
-	go mod init ananrafs/go-cobra
+	go get github.com/ananrafs/go-cobra/cmd
 
 iCobra: initializ
 	go get github.com/spf13/cobra
@@ -12,5 +12,5 @@ iCobra: initializ
 iViper: iCobra
 	go get github.com/spf13/viper
 
-init: iViper
+init: 
 	echo "start initialize"
